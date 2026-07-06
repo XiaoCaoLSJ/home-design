@@ -1,5 +1,5 @@
 /**
- * HUIPINJU — Custom Cabinetry
+ * TSJ — Custom Cabinetry
  * Interactive Scripts + i18n Language Switcher
  */
 

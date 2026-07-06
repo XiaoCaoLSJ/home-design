@@ -1,12 +1,12 @@
 /**
- * HUIPINJU — Internationalization (i18n)
+ * TSJ — Internationalization (i18n)
  * English + 中文 language data
  */
 const I18N = {
     en: {
         // Meta
-        metaTitle: 'HUIPINJU — Premium Custom Cabinetry | Whole-Home Customization | USA & Canada',
-        metaDesc: 'HUIPINJU crafts premium custom cabinetry for the entire home — kitchens, wardrobes, entertainment centers, and interior doors. 16 years of expertise, shipped to 120+ countries. Serving homeowners across the US and Canada.',
+        metaTitle: 'TSJ — Premium Custom Cabinetry | Whole-Home Customization | USA & Canada',
+        metaDesc: 'TSJ crafts premium custom cabinetry for the entire home — kitchens, wardrobes, entertainment centers, and interior doors. 16 years of expertise, shipped to 120+ countries. Serving homeowners across the US and Canada.',
 
         // Nav
         navHome: 'Home',
@@ -98,7 +98,7 @@ const I18N = {
         port5Units: '354',
 
         // Why Us
-        whyEyebrow: 'The HUIPINJU Difference',
+        whyEyebrow: 'The TSJ Difference',
         whyTitle: 'Why homeowners <em>choose us</em>',
         whySubtitle: "We combine premium materials, factory-direct pricing, and end-to-end service to deliver an experience that's as exceptional as our craftsmanship.",
         why1Title: 'Factory-Direct Pricing',
@@ -166,7 +166,7 @@ const I18N = {
         formSending: 'Sending...',
 
         // Footer
-        footerDesc: 'Premium custom cabinetry crafted for homes across the United States, Canada, and beyond. Factory-direct quality since 2010.',
+        footerDesc: 'Premium custom cabinetry crafted for homes across the United States, Canada, and beyond. Zhengzhou Taoshuoju Furniture Co., Ltd. — factory-direct quality since 2010.',
         footerExplore: 'Explore',
         footerHome: 'Home',
         footerCollections: 'Collections',
@@ -179,7 +179,7 @@ const I18N = {
         footerProd3: 'Media Cabinets',
         footerProd4: 'Interior Doors',
         footerProd5: 'Whole-Home',
-        footerCopyright: '© 2026 HUIPINJU. All rights reserved.',
+        footerCopyright: '© 2026 TSJ. All rights reserved.',
         footerPrivacy: 'Privacy Policy',
         footerTerms: 'Terms of Service',
 
@@ -194,8 +194,8 @@ const I18N = {
 
     zh: {
         // Meta
-        metaTitle: 'HUIPINJU — 高端全屋定制 | 橱柜、衣柜、电视柜 | 美国加拿大市场',
-        metaDesc: 'HUIPINJU 专注高端全屋定制，16年橱柜制造经验，出口全球120+国家，为美国及加拿大客户提供厨房橱柜、步入式衣帽间、电视柜、室内门等一站式定制服务。',
+        metaTitle: 'TSJ — 高端全屋定制 | 橱柜、衣柜、电视柜 | 美国加拿大市场',
+        metaDesc: 'TSJ 专注高端全屋定制，16年橱柜制造经验，出口全球120+国家，为美国及加拿大客户提供厨房橱柜、步入式衣帽间、电视柜、室内门等一站式定制服务。',
 
         // Nav
         navHome: '首页',
@@ -287,7 +287,7 @@ const I18N = {
         port5Units: '354',
 
         // Why Us
-        whyEyebrow: 'HUIPINJU 的与众不同',
+        whyEyebrow: 'TSJ 的与众不同',
         whyTitle: '为什么业主<em>选择我们</em>',
         whySubtitle: '我们结合优质材料、工厂直供价格和端到端服务，为您提供与工艺同样卓越的体验。',
         why1Title: '工厂直供价格',
@@ -355,7 +355,7 @@ const I18N = {
         formSending: '发送中...',
 
         // Footer
-        footerDesc: '为美国、加拿大及全球家庭打造的高端定制橱柜。自2010年以来的工厂直供品质。',
+        footerDesc: '为美国、加拿大及全球家庭打造的高端定制橱柜。郑州陶烁居家具有限公司——自2010年以来的工厂直供品质。',
         footerExplore: '浏览',
         footerHome: '首页',
         footerCollections: '新品系列',
@@ -368,7 +368,7 @@ const I18N = {
         footerProd3: '媒体柜',
         footerProd4: '室内门',
         footerProd5: '全屋定制',
-        footerCopyright: '© 2026 HUIPINJU. 版权所有。',
+        footerCopyright: '© 2026 TSJ. 版权所有。',
         footerPrivacy: '隐私政策',
         footerTerms: '服务条款',
 
