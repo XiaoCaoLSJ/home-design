@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="htmlRoot">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HUIPINJU — Premium Custom Cabinetry | Whole-Home Customization | USA &amp; Canada</title>
-    <meta name="description" content="HUIPINJU crafts premium custom cabinetry for the entire home — kitchens, wardrobes, entertainment centers, and interior doors. 16 years of expertise, shipped to 120+ countries. Serving homeowners across the US and Canada.">
+    <title data-i18n="metaTitle">HUIPINJU — Premium Custom Cabinetry | Whole-Home Customization | USA &amp; Canada</title>
+    <meta name="description" data-i18n data-i18n-attr="content:metaDesc" content="HUIPINJU crafts premium custom cabinetry for the entire home — kitchens, wardrobes, entertainment centers, and interior doors. 16 years of expertise, shipped to 120+ countries. Serving homeowners across the US and Canada.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
@@ -22,18 +22,23 @@
                 </a>
                 <nav class="nav" id="nav">
                     <ul class="nav-list">
-                        <li><a href="#home" class="nav-link active">Home</a></li>
-                        <li><a href="#collections" class="nav-link">Collections</a></li>
-                        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                        <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#home" class="nav-link active" data-i18n="navHome">Home</a></li>
+                        <li><a href="#collections" class="nav-link" data-i18n="navCollections">Collections</a></li>
+                        <li><a href="#portfolio" class="nav-link" data-i18n="navPortfolio">Portfolio</a></li>
+                        <li><a href="#about" class="nav-link" data-i18n="navAbout">About</a></li>
+                        <li><a href="#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-actions">
+                    <button class="lang-switch" id="langSwitch" aria-label="Switch language">
+                        <span class="lang-option active" data-lang="en">EN</span>
+                        <span class="lang-divider">/</span>
+                        <span class="lang-option" data-lang="zh">中文</span>
+                    </button>
                     <a href="mailto:caoweijiedesign@163.com" class="header-email">
                         <i class="fa-regular fa-envelope"></i>
                     </a>
-                    <button class="btn btn-primary" id="btnInquiry">Get a Quote</button>
+                    <button class="btn btn-primary" id="btnInquiry" data-i18n="navGetQuote">Get a Quote</button>
                     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                         <span></span>
                         <span></span>
@@ -51,12 +56,12 @@
                 <div class="slide-bg" style="background-image: url('https://www.m11wholehousecustomization.com/wp-content/uploads/2026/04/banner新.jpg');"></div>
                 <div class="slide-content">
                     <div class="container">
-                        <span class="slide-eyebrow">Summer Sale 2026</span>
-                        <h1 class="slide-title">Craftsmanship meets <em>modern living</em></h1>
-                        <p class="slide-desc">Save up to 40% on custom cabinetry for your entire home. Limited-time offer.</p>
+                        <span class="slide-eyebrow" data-i18n="slide1Eyebrow">Summer Sale 2026</span>
+                        <h1 class="slide-title" data-i18n="slide1Title">Craftsmanship meets <em>modern living</em></h1>
+                        <p class="slide-desc" data-i18n="slide1Desc">Save up to 40% on custom cabinetry for your entire home. Limited-time offer.</p>
                         <div class="slide-actions">
-                            <a href="#contact" class="btn btn-primary btn-lg">Request a Quote</a>
-                            <a href="#collections" class="btn btn-ghost btn-lg">Explore Collections</a>
+                            <a href="#contact" class="btn btn-primary btn-lg" data-i18n="slide1Btn1">Request a Quote</a>
+                            <a href="#collections" class="btn btn-ghost btn-lg" data-i18n="slide1Btn2">Explore Collections</a>
                         </div>
                     </div>
                 </div>
@@ -66,12 +71,12 @@
                 <div class="slide-bg" style="background-image: url('https://www.m11wholehousecustomization.com/wp-content/uploads/2025/07/banner22.jpg');"></div>
                 <div class="slide-content">
                     <div class="container">
-                        <span class="slide-eyebrow">Kitchen Cabinetry</span>
-                        <h2 class="slide-title">Designed for the <em>heart of your home</em></h2>
-                        <p class="slide-desc">Premium kitchen cabinets crafted to your exact specifications. From contemporary to classic.</p>
+                        <span class="slide-eyebrow" data-i18n="slide2Eyebrow">Kitchen Cabinetry</span>
+                        <h2 class="slide-title" data-i18n="slide2Title">Designed for the <em>heart of your home</em></h2>
+                        <p class="slide-desc" data-i18n="slide2Desc">Premium kitchen cabinets crafted to your exact specifications. From contemporary to classic.</p>
                         <div class="slide-actions">
-                            <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
-                            <a href="#collections" class="btn btn-ghost btn-lg">View Kitchens</a>
+                            <a href="#contact" class="btn btn-primary btn-lg" data-i18n="slide2Btn1">Get Started</a>
+                            <a href="#collections" class="btn btn-ghost btn-lg" data-i18n="slide2Btn2">View Kitchens</a>
                         </div>
                     </div>
                 </div>
@@ -81,12 +86,12 @@
                 <div class="slide-bg" style="background-image: url('https://www.m11wholehousecustomization.com/wp-content/uploads/2025/07/banner33.jpg');"></div>
                 <div class="slide-content">
                     <div class="container">
-                        <span class="slide-eyebrow">Whole-Home Customization</span>
-                        <h2 class="slide-title">One vision. <em>Every room.</em></h2>
-                        <p class="slide-desc">Cohesive custom cabinetry across your entire home — from concept to completion.</p>
+                        <span class="slide-eyebrow" data-i18n="slide3Eyebrow">Whole-Home Customization</span>
+                        <h2 class="slide-title" data-i18n="slide3Title">One vision. <em>Every room.</em></h2>
+                        <p class="slide-desc" data-i18n="slide3Desc">Cohesive custom cabinetry across your entire home — from concept to completion.</p>
                         <div class="slide-actions">
-                            <a href="#contact" class="btn btn-primary btn-lg">Start Your Project</a>
-                            <a href="#portfolio" class="btn btn-ghost btn-lg">See Our Work</a>
+                            <a href="#contact" class="btn btn-primary btn-lg" data-i18n="slide3Btn1">Start Your Project</a>
+                            <a href="#portfolio" class="btn btn-ghost btn-lg" data-i18n="slide3Btn2">See Our Work</a>
                         </div>
                     </div>
                 </div>
@@ -100,7 +105,7 @@
             <span class="dot" data-index="2"></span>
         </div>
         <div class="hero-scroll-indicator">
-            <span>Scroll</span>
+            <span data-i18n="scroll">Scroll</span>
             <i class="fas fa-arrow-down"></i>
         </div>
     </section>
@@ -111,19 +116,19 @@
             <div class="trust-items">
                 <div class="trust-item">
                     <span class="trust-number">16+</span>
-                    <span class="trust-label">Years Experience</span>
+                    <span class="trust-label" data-i18n="trustYears">Years Experience</span>
                 </div>
                 <div class="trust-item">
                     <span class="trust-number">1,000+</span>
-                    <span class="trust-label">Projects Delivered</span>
+                    <span class="trust-label" data-i18n="trustProjects">Projects Delivered</span>
                 </div>
                 <div class="trust-item">
                     <span class="trust-number">120+</span>
-                    <span class="trust-label">Countries Served</span>
+                    <span class="trust-label" data-i18n="trustCountries">Countries Served</span>
                 </div>
                 <div class="trust-item">
                     <span class="trust-number">20%</span>
-                    <span class="trust-label">Avg. Savings vs Retail</span>
+                    <span class="trust-label" data-i18n="trustSavings">Avg. Savings vs Retail</span>
                 </div>
             </div>
         </div>
@@ -133,33 +138,33 @@
     <section class="featured" id="collections">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">2026 Collection</span>
-                <h2 class="section-title">New arrivals, <em>timeless appeal</em></h2>
-                <p class="section-subtitle">Thoughtfully designed pieces that maximize space without compromising style.</p>
+                <span class="section-eyebrow" data-i18n="featuredEyebrow">2026 Collection</span>
+                <h2 class="section-title" data-i18n="featuredTitle">New arrivals, <em>timeless appeal</em></h2>
+                <p class="section-subtitle" data-i18n="featuredSubtitle">Thoughtfully designed pieces that maximize space without compromising style.</p>
             </div>
             <div class="featured-grid">
                 <div class="featured-card featured-card--large">
                     <img src="https://www.m11wholehousecustomization.com/wp-content/uploads/2026/04/第一屏-1.jpg" alt="Modern kitchen with custom cabinetry" loading="lazy">
                     <div class="featured-card-content">
-                        <span class="card-tag">Kitchen</span>
-                        <h3>Modern European Kitchen</h3>
-                        <a href="#contact" class="card-link">Inquire <i class="fas fa-arrow-right"></i></a>
+                        <span class="card-tag" data-i18n="featCard1Tag">Kitchen</span>
+                        <h3 data-i18n="featCard1Title">Modern European Kitchen</h3>
+                        <a href="#contact" class="card-link" data-i18n="inquire">Inquire <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="featured-card">
                     <img src="https://www.m11wholehousecustomization.com/wp-content/uploads/2025/11/第三版.jpg" alt="Elegant living room built-in cabinet" loading="lazy">
                     <div class="featured-card-content">
-                        <span class="card-tag">Living Room</span>
-                        <h3>Built-In Media Wall</h3>
-                        <a href="#contact" class="card-link">Inquire <i class="fas fa-arrow-right"></i></a>
+                        <span class="card-tag" data-i18n="featCard2Tag">Living Room</span>
+                        <h3 data-i18n="featCard2Title">Built-In Media Wall</h3>
+                        <a href="#contact" class="card-link" data-i18n="inquire">Inquire <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="featured-card">
                     <img src="https://www.m11wholehousecustomization.com/wp-content/uploads/2026/04/第八版-1.jpg" alt="Luxury walk-in closet" loading="lazy">
                     <div class="featured-card-content">
-                        <span class="card-tag">Bedroom</span>
-                        <h3>Walk-In Wardrobe Suite</h3>
-                        <a href="#contact" class="card-link">Inquire <i class="fas fa-arrow-right"></i></a>
+                        <span class="card-tag" data-i18n="featCard3Tag">Bedroom</span>
+                        <h3 data-i18n="featCard3Title">Walk-In Wardrobe Suite</h3>
+                        <a href="#contact" class="card-link" data-i18n="inquire">Inquire <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -170,9 +175,9 @@
     <section class="categories" id="categories">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">What We Craft</span>
-                <h2 class="section-title">Custom cabinetry for <em>every corner</em></h2>
-                <p class="section-subtitle">From kitchen to closet, we design and build cabinetry that fits your space and your life.</p>
+                <span class="section-eyebrow" data-i18n="catEyebrow">What We Craft</span>
+                <h2 class="section-title" data-i18n="catTitle">Custom cabinetry for <em>every corner</em></h2>
+                <p class="section-subtitle" data-i18n="catSubtitle">From kitchen to closet, we design and build cabinetry that fits your space and your life.</p>
             </div>
             <div class="categories-grid">
                 <div class="category-card">
@@ -181,9 +186,9 @@
                     </div>
                     <div class="category-body">
                         <span class="category-num">01</span>
-                        <h3>TV &amp; Media Cabinets</h3>
-                        <p>Custom entertainment centers that anchor your living space with style and generous storage.</p>
-                        <a href="#contact" class="category-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="cat1Title">TV &amp; Media Cabinets</h3>
+                        <p data-i18n="cat1Desc">Custom entertainment centers that anchor your living space with style and generous storage.</p>
+                        <a href="#contact" class="category-link" data-i18n="learnMore">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="category-card">
@@ -192,9 +197,9 @@
                     </div>
                     <div class="category-body">
                         <span class="category-num">02</span>
-                        <h3>Walk-In Closets</h3>
-                        <p>Boutique-worthy walk-in wardrobes designed to organize and elevate your daily routine.</p>
-                        <a href="#contact" class="category-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="cat2Title">Walk-In Closets</h3>
+                        <p data-i18n="cat2Desc">Boutique-worthy walk-in wardrobes designed to organize and elevate your daily routine.</p>
+                        <a href="#contact" class="category-link" data-i18n="learnMore">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="category-card">
@@ -203,9 +208,9 @@
                     </div>
                     <div class="category-body">
                         <span class="category-num">03</span>
-                        <h3>Kitchen Cabinetry</h3>
-                        <p>Complete kitchen solutions — cabinets, countertops, and accessories designed as one cohesive system.</p>
-                        <a href="#contact" class="category-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="cat3Title">Kitchen Cabinetry</h3>
+                        <p data-i18n="cat3Desc">Complete kitchen solutions — cabinets, countertops, and accessories designed as one cohesive system.</p>
+                        <a href="#contact" class="category-link" data-i18n="learnMore">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="category-card">
@@ -214,9 +219,9 @@
                     </div>
                     <div class="category-body">
                         <span class="category-num">04</span>
-                        <h3>Display &amp; Wine Cabinets</h3>
-                        <p>Statement storage pieces that showcase your collection while keeping everything beautifully organized.</p>
-                        <a href="#contact" class="category-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="cat4Title">Display &amp; Wine Cabinets</h3>
+                        <p data-i18n="cat4Desc">Statement storage pieces that showcase your collection while keeping everything beautifully organized.</p>
+                        <a href="#contact" class="category-link" data-i18n="learnMore">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="category-card">
@@ -225,17 +230,17 @@
                     </div>
                     <div class="category-body">
                         <span class="category-num">05</span>
-                        <h3>Interior Doors</h3>
-                        <p>Custom-crafted doors that bring warmth, privacy, and architectural character to every room.</p>
-                        <a href="#contact" class="category-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                        <h3 data-i18n="cat5Title">Interior Doors</h3>
+                        <p data-i18n="cat5Desc">Custom-crafted doors that bring warmth, privacy, and architectural character to every room.</p>
+                        <a href="#contact" class="category-link" data-i18n="learnMore">Learn more <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
                 <div class="category-card category-card--cta">
                     <div class="category-cta-content">
                         <span class="category-num">06</span>
-                        <h3>Whole-Home Customization</h3>
-                        <p>Wardrobes, vanities, mudroom built-ins, bookcases, laundry cabinets, wall paneling, skirting boards — every surface, every room.</p>
-                        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                        <h3 data-i18n="cat6Title">Whole-Home Customization</h3>
+                        <p data-i18n="cat6Desc">Wardrobes, vanities, mudroom built-ins, bookcases, laundry cabinets, wall paneling, skirting boards — every surface, every room.</p>
+                        <a href="#contact" class="btn btn-primary" data-i18n="cat6Btn">Start Your Project</a>
                     </div>
                 </div>
             </div>
@@ -246,9 +251,9 @@
     <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">Our Work</span>
-                <h2 class="section-title">Trusted by homeowners <em>across the globe</em></h2>
-                <p class="section-subtitle">Every year, we deliver custom cabinetry to thousands of homes worldwide — including projects across the United States and Canada.</p>
+                <span class="section-eyebrow" data-i18n="portEyebrow">Our Work</span>
+                <h2 class="section-title" data-i18n="portTitle">Trusted by homeowners <em>across the globe</em></h2>
+                <p class="section-subtitle" data-i18n="portSubtitle">Every year, we deliver custom cabinetry to thousands of homes worldwide — including projects across the United States and Canada.</p>
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-card">
@@ -256,9 +261,9 @@
                         <img src="https://www.m11wholehousecustomization.com/wp-content/uploads/2026/04/第一屏-1.jpg" alt="Custom bookcase project" loading="lazy">
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-location">Germany</span>
-                        <h4>Custom Bookcase Library</h4>
-                        <p>973 units</p>
+                        <span class="portfolio-location" data-i18n="port1Loc">Germany</span>
+                        <h4 data-i18n="port1Title">Custom Bookcase Library</h4>
+                        <p><span data-i18n="port1Units">973</span> <span data-i18n="portUnits">units</span></p>
                     </div>
                 </div>
                 <div class="portfolio-card">
@@ -266,9 +271,9 @@
                         <img src="https://www.m11wholehousecustomization.com/wp-content/uploads/2026/04/第六版.jpg" alt="Canada cabinet project" loading="lazy">
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-location">Canada</span>
-                        <h4>Modern Kitchen Suite</h4>
-                        <p>495 units</p>
+                        <span class="portfolio-location" data-i18n="port2Loc">Canada</span>
+                        <h4 data-i18n="port2Title">Modern Kitchen Suite</h4>
+                        <p><span data-i18n="port2Units">495</span> <span data-i18n="portUnits">units</span></p>
                     </div>
                 </div>
                 <div class="portfolio-card">
@@ -276,9 +281,9 @@
                         <img src="https://www.m11wholehousecustomization.com/wp-content/uploads/2026/04/好评图-4.jpg" alt="Australia custom cabinetry" loading="lazy">
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-location">Australia</span>
-                        <h4>Whole-Home Renovation</h4>
-                        <p>608 units</p>
+                        <span class="portfolio-location" data-i18n="port3Loc">Australia</span>
+                        <h4 data-i18n="port3Title">Whole-Home Renovation</h4>
+                        <p><span data-i18n="port3Units">608</span> <span data-i18n="portUnits">units</span></p>
                     </div>
                 </div>
                 <div class="portfolio-card">
@@ -286,9 +291,9 @@
                         <img src="https://www.m11wholehousecustomization.com/wp-content/uploads/2026/04/第九版-1.jpg" alt="US villa project" loading="lazy">
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-location">United States</span>
-                        <h4>Luxury Villa Build-Out</h4>
-                        <p>693 units</p>
+                        <span class="portfolio-location" data-i18n="port4Loc">United States</span>
+                        <h4 data-i18n="port4Title">Luxury Villa Build-Out</h4>
+                        <p><span data-i18n="port4Units">693</span> <span data-i18n="portUnits">units</span></p>
                     </div>
                 </div>
                 <div class="portfolio-card">
@@ -296,9 +301,9 @@
                         <img src="https://www.m11wholehousecustomization.com/wp-content/uploads/2025/11/第三版.jpg" alt="US full house project" loading="lazy">
                     </div>
                     <div class="portfolio-info">
-                        <span class="portfolio-location">United States</span>
-                        <h4>Coastal Custom Home</h4>
-                        <p>354 units</p>
+                        <span class="portfolio-location" data-i18n="port5Loc">United States</span>
+                        <h4 data-i18n="port5Title">Coastal Custom Home</h4>
+                        <p><span data-i18n="port5Units">354</span> <span data-i18n="portUnits">units</span></p>
                     </div>
                 </div>
             </div>
@@ -310,36 +315,36 @@
         <div class="container">
             <div class="why-us-wrapper">
                 <div class="why-us-content">
-                    <span class="section-eyebrow">The HUIPINJU Difference</span>
-                    <h2 class="section-title">Why homeowners <em>choose us</em></h2>
-                    <p class="section-subtitle">We combine premium materials, factory-direct pricing, and end-to-end service to deliver an experience that's as exceptional as our craftsmanship.</p>
+                    <span class="section-eyebrow" data-i18n="whyEyebrow">The HUIPINJU Difference</span>
+                    <h2 class="section-title" data-i18n="whyTitle">Why homeowners <em>choose us</em></h2>
+                    <p class="section-subtitle" data-i18n="whySubtitle">We combine premium materials, factory-direct pricing, and end-to-end service to deliver an experience that's as exceptional as our craftsmanship.</p>
                     <div class="why-us-grid">
                         <div class="why-card">
                             <div class="why-icon"><i class="fa-regular fa-credit-card"></i></div>
                             <div class="why-text">
-                                <h3>Factory-Direct Pricing</h3>
-                                <p>Save at least 20% by purchasing straight from the source. No middlemen, no retail markup — just honest, transparent pricing.</p>
+                                <h3 data-i18n="why1Title">Factory-Direct Pricing</h3>
+                                <p data-i18n="why1Desc">Save at least 20% by purchasing straight from the source. No middlemen, no retail markup — just honest, transparent pricing.</p>
                             </div>
                         </div>
                         <div class="why-card">
                             <div class="why-icon"><i class="fa-regular fa-circle-check"></i></div>
                             <div class="why-text">
-                                <h3>One-Stop Simplicity</h3>
-                                <p>From design consultation to delivery and installation guidance — we handle the entire process so you don't have to coordinate multiple vendors.</p>
+                                <h3 data-i18n="why2Title">One-Stop Simplicity</h3>
+                                <p data-i18n="why2Desc">From design consultation to delivery and installation guidance — we handle the entire process so you don't have to coordinate multiple vendors.</p>
                             </div>
                         </div>
                         <div class="why-card">
                             <div class="why-icon"><i class="fa-regular fa-user-group"></i></div>
                             <div class="why-text">
-                                <h3>Dedicated Support</h3>
-                                <p>A personal project specialist guides you every step of the way, with door-to-door shipping and detailed installation support.</p>
+                                <h3 data-i18n="why3Title">Dedicated Support</h3>
+                                <p data-i18n="why3Desc">A personal project specialist guides you every step of the way, with door-to-door shipping and detailed installation support.</p>
                             </div>
                         </div>
                         <div class="why-card">
                             <div class="why-icon"><i class="fa-regular fa-shield"></i></div>
                             <div class="why-text">
-                                <h3>16 Years of Mastery</h3>
-                                <p>Over a decade and a half refining our craft. Our cabinetry is built with patented materials for lasting durability and beauty.</p>
+                                <h3 data-i18n="why4Title">16 Years of Mastery</h3>
+                                <p data-i18n="why4Desc">Over a decade and a half refining our craft. Our cabinetry is built with patented materials for lasting durability and beauty.</p>
                             </div>
                         </div>
                     </div>
@@ -347,9 +352,9 @@
                 <div class="why-us-media">
                     <img src="https://www.m11wholehousecustomization.com/wp-content/themes/fshouse/static/image/home-why.jpg" alt="HUIPINJU craftsmanship" loading="lazy">
                     <div class="why-us-badge">
-                        <span>Exporting to</span>
+                        <span data-i18n="whyBadge1">Exporting to</span>
                         <strong>120+</strong>
-                        <span>Countries</span>
+                        <span data-i18n="whyBadge2">Countries</span>
                     </div>
                 </div>
             </div>
@@ -360,33 +365,33 @@
     <section class="how-it-works">
         <div class="container">
             <div class="section-header">
-                <span class="section-eyebrow">The Process</span>
-                <h2 class="section-title">From floor plan <em>to finished home</em></h2>
-                <p class="section-subtitle">A simple, transparent process designed around you.</p>
+                <span class="section-eyebrow" data-i18n="howEyebrow">The Process</span>
+                <h2 class="section-title" data-i18n="howTitle">From floor plan <em>to finished home</em></h2>
+                <p class="section-subtitle" data-i18n="howSubtitle">A simple, transparent process designed around you.</p>
             </div>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">01</div>
-                    <h3>Share Your Vision</h3>
-                    <p>Send us your floor plan, inspiration photos, and requirements. We'll discuss your style, budget, and timeline.</p>
+                    <h3 data-i18n="step1Title">Share Your Vision</h3>
+                    <p data-i18n="step1Desc">Send us your floor plan, inspiration photos, and requirements. We'll discuss your style, budget, and timeline.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">02</div>
-                    <h3>Design &amp; Quote</h3>
-                    <p>Our team creates detailed designs and a transparent quote — typically within 3–5 business days.</p>
+                    <h3 data-i18n="step2Title">Design &amp; Quote</h3>
+                    <p data-i18n="step2Desc">Our team creates detailed designs and a transparent quote — typically within 3–5 business days.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">03</div>
-                    <h3>Craft &amp; Ship</h3>
-                    <p>Your cabinetry is precision-manufactured, quality-checked, and shipped door-to-door with full tracking.</p>
+                    <h3 data-i18n="step3Title">Craft &amp; Ship</h3>
+                    <p data-i18n="step3Desc">Your cabinetry is precision-manufactured, quality-checked, and shipped door-to-door with full tracking.</p>
                 </div>
                 <div class="step-connector"></div>
                 <div class="step">
                     <div class="step-number">04</div>
-                    <h3>Install &amp; Enjoy</h3>
-                    <p>Receive detailed installation guides and live support. Then, enjoy your beautifully transformed home.</p>
+                    <h3 data-i18n="step4Title">Install &amp; Enjoy</h3>
+                    <p data-i18n="step4Desc">Receive detailed installation guides and live support. Then, enjoy your beautifully transformed home.</p>
                 </div>
             </div>
         </div>
@@ -396,11 +401,11 @@
     <section class="cta-banner">
         <div class="container">
             <div class="cta-banner-content">
-                <h2>Ready to transform your home?</h2>
-                <p>Send us your floor plan and we'll create a personalized design and quote — obligation free.</p>
+                <h2 data-i18n="ctaTitle">Ready to transform your home?</h2>
+                <p data-i18n="ctaDesc">Send us your floor plan and we'll create a personalized design and quote — obligation free.</p>
                 <div class="cta-banner-actions">
-                    <a href="#contact" class="btn btn-primary btn-lg">Get Your Free Quote</a>
-                    <a href="mailto:caoweijiedesign@163.com" class="btn btn-ghost btn-lg">
+                    <a href="#contact" class="btn btn-primary btn-lg" data-i18n="ctaBtn1">Get Your Free Quote</a>
+                    <a href="mailto:caoweijiedesign@163.com" class="btn btn-ghost btn-lg" data-i18n="ctaBtn2">
                         <i class="fa-regular fa-envelope"></i> Email Us Directly
                     </a>
                 </div>
@@ -413,9 +418,9 @@
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-intro">
-                    <span class="section-eyebrow">Get In Touch</span>
-                    <h2 class="section-title">Let's start <em>the conversation</em></h2>
-                    <p>Whether you're planning a full-home renovation or a single-room refresh, our team is ready to help. Fill out the form or reach us directly.</p>
+                    <span class="section-eyebrow" data-i18n="contactEyebrow">Get In Touch</span>
+                    <h2 class="section-title" data-i18n="contactTitle">Let's start <em>the conversation</em></h2>
+                    <p data-i18n="contactDesc">Whether you're planning a full-home renovation or a single-room refresh, our team is ready to help. Fill out the form or reach us directly.</p>
                     <div class="contact-methods">
                         <a href="https://api.whatsapp.com/send?phone=8617814674328" class="contact-method" target="_blank" rel="noopener">
                             <i class="fab fa-whatsapp"></i>
@@ -442,52 +447,52 @@
                 </div>
                 <div class="contact-form-wrap" id="sendform">
                     <div class="contact-form-card">
-                        <h3>Request a Quote</h3>
-                        <p>Tell us about your project and we'll get back to you within 24 hours.</p>
+                        <h3 data-i18n="contactFormTitle">Request a Quote</h3>
+                        <p data-i18n="contactFormDesc">Tell us about your project and we'll get back to you within 24 hours.</p>
                         <form class="contact-form" id="contactForm">
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="name">Full Name *</label>
-                                    <input type="text" id="name" name="name" placeholder="John Smith" required>
+                                    <label for="name" data-i18n="formNameLabel">Full Name *</label>
+                                    <input type="text" id="name" name="name" data-i18n data-i18n-attr="placeholder:formNamePlaceholder" placeholder="John Smith" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                    <label for="email" data-i18n="formEmailLabel">Email Address *</label>
+                                    <input type="email" id="email" name="email" data-i18n data-i18n-attr="placeholder:formEmailPlaceholder" placeholder="john@example.com" required>
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                                    <label for="phone" data-i18n="formPhoneLabel">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" data-i18n data-i18n-attr="placeholder:formPhonePlaceholder" placeholder="+1 (555) 000-0000">
                                 </div>
                                 <div class="form-group">
-                                    <label for="location">Your Location</label>
+                                    <label for="location" data-i18n="formLocLabel">Your Location</label>
                                     <select id="location" name="location">
-                                        <option value="">Select country</option>
-                                        <option value="US">United States</option>
-                                        <option value="CA">Canada</option>
-                                        <option value="other">Other</option>
+                                        <option value="" data-i18n="formLocOpt0">Select country</option>
+                                        <option value="US" data-i18n="formLocOpt1">United States</option>
+                                        <option value="CA" data-i18n="formLocOpt2">Canada</option>
+                                        <option value="other" data-i18n="formLocOpt3">Other</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="product">Product Interest</label>
+                                <label for="product" data-i18n="formProdLabel">Product Interest</label>
                                 <select id="product" name="product">
-                                    <option value="">Select a category</option>
-                                    <option value="tv-cabinet">TV &amp; Media Cabinets</option>
-                                    <option value="wardrobe">Walk-In Closets</option>
-                                    <option value="kitchen">Kitchen Cabinetry</option>
-                                    <option value="display">Display &amp; Wine Cabinets</option>
-                                    <option value="door">Interior Doors</option>
-                                    <option value="full-house">Whole-Home Customization</option>
+                                    <option value="" data-i18n="formProdOpt0">Select a category</option>
+                                    <option value="tv-cabinet" data-i18n="formProdOpt1">TV &amp; Media Cabinets</option>
+                                    <option value="wardrobe" data-i18n="formProdOpt2">Walk-In Closets</option>
+                                    <option value="kitchen" data-i18n="formProdOpt3">Kitchen Cabinetry</option>
+                                    <option value="display" data-i18n="formProdOpt4">Display &amp; Wine Cabinets</option>
+                                    <option value="door" data-i18n="formProdOpt5">Interior Doors</option>
+                                    <option value="full-house" data-i18n="formProdOpt6">Whole-Home Customization</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="message">Project Details *</label>
-                                <textarea id="message" name="message" rows="4" placeholder="Describe your project — room types, approximate dimensions, style preferences, timeline..." required></textarea>
+                                <label for="message" data-i18n="formMsgLabel">Project Details *</label>
+                                <textarea id="message" name="message" rows="4" data-i18n data-i18n-attr="placeholder:formMsgPlaceholder" placeholder="Describe your project — room types, approximate dimensions, style preferences, timeline..." required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block btn-lg">Send Inquiry</button>
-                            <p class="form-note">We respect your privacy. No spam, ever.</p>
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" data-i18n="formSubmit">Send Inquiry</button>
+                            <p class="form-note" data-i18n="formNote">We respect your privacy. No spam, ever.</p>
                         </form>
                     </div>
                 </div>
@@ -504,31 +509,31 @@
                         <span class="logo-mark">H</span>
                         <span>HUIPINJU</span>
                     </a>
-                    <p>Premium custom cabinetry crafted for homes across the United States, Canada, and beyond. Factory-direct quality since 2010.</p>
+                    <p data-i18n="footerDesc">Premium custom cabinetry crafted for homes across the United States, Canada, and beyond. Factory-direct quality since 2010.</p>
                 </div>
                 <div class="footer-links-group">
                     <div class="footer-col">
-                        <h4>Explore</h4>
+                        <h4 data-i18n="footerExplore">Explore</h4>
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#collections">Collections</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#home" data-i18n="footerHome">Home</a></li>
+                            <li><a href="#collections" data-i18n="footerCollections">Collections</a></li>
+                            <li><a href="#portfolio" data-i18n="footerPortfolio">Portfolio</a></li>
+                            <li><a href="#about" data-i18n="footerAbout">About Us</a></li>
+                            <li><a href="#contact" data-i18n="footerContact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>Products</h4>
+                        <h4 data-i18n="footerProducts">Products</h4>
                         <ul>
-                            <li><a href="#categories">Kitchen Cabinetry</a></li>
-                            <li><a href="#categories">Walk-In Closets</a></li>
-                            <li><a href="#categories">Media Cabinets</a></li>
-                            <li><a href="#categories">Interior Doors</a></li>
-                            <li><a href="#categories">Whole-Home</a></li>
+                            <li><a href="#categories" data-i18n="footerProd1">Kitchen Cabinetry</a></li>
+                            <li><a href="#categories" data-i18n="footerProd2">Walk-In Closets</a></li>
+                            <li><a href="#categories" data-i18n="footerProd3">Media Cabinets</a></li>
+                            <li><a href="#categories" data-i18n="footerProd4">Interior Doors</a></li>
+                            <li><a href="#categories" data-i18n="footerProd5">Whole-Home</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>Contact</h4>
+                        <h4 data-i18n="footerContact">Contact</h4>
                         <ul class="footer-contact-list">
                             <li><i class="fa-regular fa-envelope"></i> caoweijiedesign@163.com</li>
                             <li><i class="fab fa-whatsapp"></i> +86 178 1467 4328</li>
@@ -537,10 +542,10 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 HUIPINJU. All rights reserved.</p>
+                <p data-i18n="footerCopyright">&copy; 2026 HUIPINJU. All rights reserved.</p>
                 <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a href="#" data-i18n="footerPrivacy">Privacy Policy</a>
+                    <a href="#" data-i18n="footerTerms">Terms of Service</a>
                 </div>
             </div>
         </div>
@@ -552,21 +557,22 @@
             <div class="cookie-inner">
                 <div class="cookie-text">
                     <i class="fas fa-cookie-bite"></i>
-                    <p>We use anonymous performance cookies to ensure you get the best experience on our website. <strong>We never use targeting or advertising cookies.</strong></p>
+                    <p data-i18n="cookieText">We use anonymous performance cookies to ensure you get the best experience on our website. <strong>We never use targeting or advertising cookies.</strong></p>
                 </div>
                 <div class="cookie-actions">
-                    <button class="btn btn-primary btn-sm" id="acceptCookies">Accept</button>
-                    <button class="btn btn-text btn-sm" id="rejectCookies">Decline</button>
+                    <button class="btn btn-primary btn-sm" id="acceptCookies" data-i18n="cookieAccept">Accept</button>
+                    <button class="btn btn-text btn-sm" id="rejectCookies" data-i18n="cookieDecline">Decline</button>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Back to Top -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <button class="back-to-top" id="backToTop" data-i18n data-i18n-attr="aria-label:backToTop" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

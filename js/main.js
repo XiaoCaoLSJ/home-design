@@ -1,9 +1,10 @@
 /**
  * HUIPINJU — Custom Cabinetry
- * Interactive Scripts
+ * Interactive Scripts + i18n Language Switcher
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+    initI18n();
     initSlider();
     initMobileMenu();
     initHeaderScroll();
@@ -14,6 +15,72 @@ document.addEventListener('DOMContentLoaded', () => {
     initActiveNavLink();
     initSmoothScroll();
 });
+
+// ==========================================
+// I18n — Language Switcher
+// ==========================================
+function initI18n() {
+    const langSwitch = document.getElementById('langSwitch');
+    if (!langSwitch) return;
+
+    // Load saved preference, default to English
+    const savedLang = localStorage.getItem('preferredLang') || 'en';
+    applyLanguage(savedLang);
+
+    langSwitch.addEventListener('click', () => {
+        const current = getCurrentLang();
+        const next = current === 'en' ? 'zh' : 'en';
+        applyLanguage(next);
+        localStorage.setItem('preferredLang', next);
+    });
+}
+
+function getCurrentLang() {
+    return document.getElementById('htmlRoot').getAttribute('lang') || 'en';
+}
+
+function applyLanguage(lang) {
+    const translations = I18N[lang];
+    if (!translations) return;
+
+    // Update html lang attribute
+    document.getElementById('htmlRoot').setAttribute('lang', lang);
+
+    // Update lang switch UI
+    document.querySelectorAll('.lang-option').forEach(opt => {
+        opt.classList.toggle('active', opt.dataset.lang === lang);
+    });
+
+    // Walk all elements with data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (key && translations[key]) {
+            el.innerHTML = translations[key];
+        }
+
+        // Handle data-i18n-attr (format: "attrName:i18nKey")
+        const attrDef = el.dataset.i18nAttr;
+        if (attrDef) {
+            attrDef.split(',').forEach(pair => {
+                const [attrName, i18nKey] = pair.split(':').map(s => s.trim());
+                if (attrName && i18nKey && translations[i18nKey]) {
+                    el.setAttribute(attrName, translations[i18nKey]);
+                }
+            });
+        }
+    });
+
+    // Update meta description
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && translations.metaDesc) {
+        metaDesc.setAttribute('content', translations.metaDesc);
+    }
+}
+
+function t(key) {
+    const lang = getCurrentLang();
+    return I18N[lang]?.[key] || I18N.en[key] || key;
+}
 
 // ==========================================
 // Hero Slider
@@ -182,7 +249,7 @@ function initCookieBanner() {
 }
 
 // ==========================================
-// Contact Form
+// Contact Form (with i18n messages)
 // ==========================================
 function initContactForm() {
     const form = document.getElementById('contactForm');
@@ -195,24 +262,24 @@ function initContactForm() {
 
         // Validate required fields
         if (!data.name || !data.email || !data.message) {
-            showFormMessage('Please fill in all required fields.', 'error');
+            showFormMessage(t('formError'), 'error');
             return;
         }
 
         // Basic email validation
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
-            showFormMessage('Please enter a valid email address.', 'error');
+            showFormMessage(t('formEmailError'), 'error');
             return;
         }
 
         const btn = form.querySelector('button[type="submit"]');
         const originalText = btn.textContent;
-        btn.textContent = 'Sending...';
+        btn.textContent = t('formSending');
         btn.disabled = true;
 
         // Simulate submission
         setTimeout(() => {
-            showFormMessage("Thank you! We've received your inquiry and will get back to you within 24 hours.", 'success');
+            showFormMessage(t('formSuccess'), 'success');
             form.reset();
             btn.textContent = originalText;
             btn.disabled = false;
