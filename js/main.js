@@ -20,18 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
 // I18n — Language Switcher
 // ==========================================
 function initI18n() {
-    const langSwitch = document.getElementById('langSwitch');
-    if (!langSwitch) return;
+    const langSelect = document.getElementById('langSelect');
+    if (!langSelect) return;
 
     // Load saved preference, default to English
     const savedLang = localStorage.getItem('preferredLang') || 'en';
     applyLanguage(savedLang);
+    langSelect.value = savedLang;
 
-    langSwitch.addEventListener('click', () => {
-        const current = getCurrentLang();
-        const next = current === 'en' ? 'zh' : 'en';
-        applyLanguage(next);
-        localStorage.setItem('preferredLang', next);
+    langSelect.addEventListener('change', () => {
+        const lang = langSelect.value;
+        applyLanguage(lang);
+        localStorage.setItem('preferredLang', lang);
     });
 }
 
@@ -45,11 +45,6 @@ function applyLanguage(lang) {
 
     // Update html lang attribute
     document.getElementById('htmlRoot').setAttribute('lang', lang);
-
-    // Update lang switch UI
-    document.querySelectorAll('.lang-option').forEach(opt => {
-        opt.classList.toggle('active', opt.dataset.lang === lang);
-    });
 
     // Walk all elements with data-i18n
     document.querySelectorAll('[data-i18n]').forEach(el => {
